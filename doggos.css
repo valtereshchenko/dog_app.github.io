@@ -1,0 +1,28 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: black;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: white;
+}
+section {
+    flex-basis: 67%;
+	margin-right: 5%;
+}
+.breeds {
+    text-align: right;
+}
+aside {
+	flex-basis: 33%;
+}
+.doggos {
+    text-align: center;
+    margin-top: 10%;
+}

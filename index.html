@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog App</title>
+    <link rel="stylesheet" href="./doggos.css">
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&displ ay=swap" rel="stylesheet">
+    <div class="wrapper">
+        <section>
+            <h1>Welcome to your favorite Dog Viewer</h1>
+            <p>From the drop-down, select your the dog breed of your preference.</p>
+            <div class ="doggos">
+                <p>This is your selected doggo:</p>
+                <img src="http://placecorgi.com/250" 
+                style= "border-radius: 10%" alt="real cute dog" class="dogimg">
+            </div>
+            <style>
+                @keyframes spin {
+                to {
+                    transform: rotateZ(360deg);
+                }
+                }
+            
+                .yoda {
+                height: 334px;
+                width: 334px;
+                background-color: brown;
+                border-radius: 50%;
+                }
+            
+                .spin {
+                animation: spin 3s ease-in-out infinite;
+                }
+            </style>
+            <img src="img/baby.png" style="background-color: brown; border-radius: 50%" class="yoda spin" />
+        </section>
+        <aside>
+            <h3>The Breeds:</h3>
+            <select class="breeds"></select>
+        </aside>
+        </div>
+    <script src="./doggos.js"></script>
+</body>
+</html>
