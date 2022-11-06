@@ -15,6 +15,7 @@ body {
 section {
     flex-basis: 67%;
 	margin-right: 5%;
+    margin-left: 5%;
 }
 .breeds {
     text-align: right;
@@ -23,6 +24,23 @@ aside {
 	flex-basis: 33%;
 }
 .doggos {
-    text-align: center;
     margin-top: 10%;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: center;
 }
+.spinner {
+    font-size: 50px;
+    text-align: center;
+    animation: 2s spin linear infinite;
+    display: none;
+ }
+.dogimg {
+    display: none;
+    text-align: center;
+}
+.show {
+     display: block;
+ }
+

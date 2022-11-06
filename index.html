@@ -16,27 +16,21 @@
             <div class ="doggos">
                 <p>This is your selected doggo:</p>
                 <img src="http://placecorgi.com/250" 
-                style= "border-radius: 10%" alt="real cute dog" class="dogimg">
+                style= "border-radius: 10%" alt="real cute dog" class="dogimg show">
             </div>
-            <style>
-                @keyframes spin {
-                to {
-                    transform: rotateZ(360deg);
-                }
-                }
-            
-                .yoda {
-                height: 334px;
-                width: 334px;
-                background-color: brown;
-                border-radius: 50%;
-                }
-            
-                .spin {
-                animation: spin 3s ease-in-out infinite;
-                }
-            </style>
-            <img src="img/baby.png" style="background-color: brown; border-radius: 50%" class="yoda spin" />
+            <div class="spinner">
+                <style>
+                    @keyframes spin {
+                    to {
+                        transform: rotateZ(360deg);
+                    }
+                    }
+                    .spin {
+                    animation: spin 4s ease-in-out infinite;
+                    }
+                </style>
+            <img src="img/baby.png" style="background-color: brown; border-radius: 50%"/>
+        </div>
         </section>
         <aside>
             <h3>The Breeds:</h3>

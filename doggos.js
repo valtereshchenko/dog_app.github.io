@@ -1,6 +1,7 @@
 const BREEDS_URL = 'https://dog.ceo/api/breeds/list/all';
 const select = document.querySelector('.breeds');
 const img = document.querySelector('.dogimg');
+const spinner = document.querySelector('.spinner');
 
 fetch(BREEDS_URL)
     .then(function (response) {
@@ -22,6 +23,8 @@ fetch(BREEDS_URL)
     
 
 function addDoggo (url) {
+    spinner.classList.add('show');
+    img.classList.remove('show');
     // show loading spinner
     fetch(url)
         .then(function(response) {
@@ -29,10 +32,18 @@ function addDoggo (url) {
         })
         .then(function (data) {
             img.src = data.message;
+            //spinner.classList.remove('show');
+            //img.classList.add ('show');
     }
         )
 }
 
+img.addEventListener("load", function() {
+    // what until this "load" event happens
+    spinner.classList.remove("show");
+    // remove the show from the spinner and add it to the image
+    img.classList.add ('show');
+})
 
 select.addEventListener("change", function(event) {
     let selected = event.target.value; 
